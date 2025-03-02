@@ -1,0 +1,56 @@
+.active{
+    color: rgba(255, 38, 38, 0.848);
+    cursor: pointer;
+
+}
+.category-slider .slick-prev:before,
+.category-slider .slick-next:before {
+  color: #000;
+}
+
+.category-slider .slick-dots li button:before {
+  font-size: 12px;
+}
+
+.category-item .card {
+
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-item .card:hover {
+  transform: translateY(-5px);
+}
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  .animate-shimmer {
+    background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 37%, #f3f4f6 63%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+  }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #1f2937; /* gray-800 */
+  opacity: 0.75;
+}
+
+.slick-dots li button:before {
+  color: #6b7280; /* gray-500 */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3b82f6; /* blue-500 */
+}
+
+.slick-prev {
+  left: 20px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 20px;
+}
