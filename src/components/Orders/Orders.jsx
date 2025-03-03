@@ -85,7 +85,7 @@ const Orders = () => {
                 <div>
                   <h2 className="text-lg font-semibold mb-2">Shipping Details</h2>
                   <p className="text-gray-600">
-                    {order.shippingAddress.city}, {order.shippingAddress.details}
+                    {order?.shippingAddress?.city}, {order?.shippingAddress?.details}
                   </p>
                   <p className="text-gray-600">Phone: {order.shippingAddress.phone}</p>
                   {order.isPaid ? <p className="text-green-600">Paid</p>:<p className="text-red-600">NotPaid</p>}
